@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X</title>
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/leftSide.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/posts.css" />
+    <link rel="stylesheet" href="css/rightSide.css" />
+    <link rel="stylesheet" href="css/explor.css" />
+
+    <link rel="icon" href="assets/icons/X-icon.png" />
+  </head>
+
+  <body>
+    <div class="mainPage">
+      <aside class="leftSideMenu">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="assets/icons/X-icon.png" alt="X logo" />
+          </a>
+
+          <nav class="menu">
+            <ul class="menuList">
+              <li>
+                <a href="index.html" class="menuItem active"
+                  ><img
+                    src="assets/icons/home.png"
+                    class="menuIcon"
+                    alt=""
+                  /><span>Home</span></a
+                >
+              </li>
+
+              <li>
+                <a href="explore.html" class="menuItem"
+                  ><img
+                    src="assets/icons/explore.png"
+                    class="menuIcon"
+                    alt=""
+                  /><span>Explore</span></a
+                >
+              </li>
+
+              <li>
+                <a href="notification.html" class="menuItem"
+                  ><img
+                    src="assets/icons/notifications.png"
+                    class="menuIcon"
+                    alt=""
+                  /><span>Notifications</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="menuItem"
+                  ><img
+                    src="assets/icons/connect.png"
+                    class="menuIcon"
+                    alt=""
+                  /><span>Connect</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="menuItem"
+                  ><img
+                    src="assets/icons/chat.png"
+                    class="menuIcon"
+                    alt=""
+                  /><span>Chat</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="menuItem"
+                  ><img
+                    src="assets/icons/grok.png"
+                    class="menuIcon"
+                    alt=""
+                  /><span>Grok</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="menuItem"
+                  ><img
+                    src="assets/icons/community.png"
+                    class="menuIcon"
+                    alt=""
+                  /><span>Communities</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="menuItem"
+                  ><img
+                    src="assets/icons/X-icon.png"
+                    class="menuIcon"
+                    alt=""
+                  /><span>Premium</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="menuItem"
+                  ><img
+                    src="assets/icons/profile.png"
+                    class="menuIcon"
+                    alt=""
+                  /><span>Profile</span></a
+                >
+              </li>
+
+              <li class="more-container">
+                <a href="#" class="menuItem" id="moreBtn">
+                  <img src="assets/icons/more.png" class="menuIcon" alt="" />
+                  <span>More</span>
+                </a>
+
+                <div class="dropdown-menu" id="moreDropdown">
+                  <a href="bookmarks.html" class="menuItem"
+                    ><img src="assets/icons/save.png" /> Bookmarks</a
+                  >
+                </div>
+              </li>
+              <li>
+                <button class="menuItem" id="themeBtn">
+                  <img src="assets/icons/switch.png" class="menuIcon" alt="" />
+                  <span>Switch Theme</span>
+                </button>
+              </li>
+            </ul>
+
+            <button class="postButton">Post</button>
+          </nav>
+
+          <section class="userProfile">
+            <div class="content">
+              <img
+                src="assets/images/ana.png"
+                alt="User Avatar"
+                class="avatar"
+              />
+
+              <div class="userInfo">
+                <span class="name">mariam yasser</span>
+
+                <span class="handle">@mariamyass71202</span>
+              </div>
+
+              <div class="moreIcon">...</div>
+            </div>
+          </section>
+        </div>
+      </aside>
+
+      <main class="mainFeed">
+        <section class="feedHeader">
+          <button class="forYouSec active">For you</button>
+          <button class="followingSec">Following</button>
+        </section>
+
+        <section class="createPost">
+          <div class="postLeft">
+            <img src="assets/images/ana.png" class="avatar" alt="Profile" />
+          </div>
+
+          <div class="postRight">
+            <input
+              type="text"
+              placeholder="What’s happening?"
+              class="tweetInput"
+            />
+
+            <div class="postBottom">
+              <div class="postIcons">
+                <button class="buttonIcon">
+                  <img src="assets/icons/media.png" alt="Media" />
+                </button>
+                <button class="buttonIcon">
+                  <img src="assets/icons/gif.png" alt="GIF" />
+                </button>
+                <button class="buttonIcon">
+                  <img src="assets/icons/poll.png" alt="Poll" />
+                </button>
+                <button class="buttonIcon">
+                  <img src="assets/icons/emoji.png" alt="Emoji" />
+                </button>
+                <button class="buttonIcon">
+                  <img src="assets/icons/schedule.png" alt="Schedule" />
+                </button>
+                <button class="buttonIcon">
+                  <img src="assets/icons/location.png" alt="Location" />
+                </button>
+              </div>
+
+              <button class="postBtn">Post</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="postsGrid" id="postsGrid"></section>
+      </main>
+      <aside class="rightSide">
+        <div class="searchBar">
+          <img src="assets/icons/explore.png" class="searchIcon" alt="Search" />
+          <input type="text" placeholder="Search" class="searchInput" />
+        </div>
+
+        <div class="rightCard subscribeCard">
+          <h2>Subscribe to Premium</h2>
+          <p>
+            Subscribe to unlock new features and if eligible, receive a share of
+            revenue.
+          </p>
+          <button class="subscribeBtn">Subscribe</button>
+        </div>
+
+        <div class="rightCard newsCard">
+          <h2>What’s happening</h2>
+          <div class="newsItem">
+            <div class="newsContent">
+              <span class="newsCategory">Sports · Trending</span>
+              <div class="newsTitle">Salah Sets Liverpool Record</div>
+              <span class="newsStats">33.9K posts</span>
+            </div>
+          </div>
+          <div class="newsItem">
+            <div class="newsContent">
+              <span class="newsCategory">Trending in egypt</span>
+              <div class="newsTitle">سيدني</div>
+              <span class="newsStats">17.5K posts</span>
+            </div>
+          </div>
+          <div class="newsItem">
+            <div class="newsContent">
+              <span class="newsCategory">Trending in egypt</span>
+              <div class="newsTitle">Focus on faith</div>
+              <span class="newsStats">3,507 posts</span>
+            </div>
+          </div>
+          <a href="#" class="showMore">Show more</a>
+        </div>
+
+        <div class="rightCard followCard">
+          <h2>Who to follow</h2>
+
+          <div class="followItem">
+            <div class="personDetails">
+              <img
+                src="assets/images/zamalek.png"
+                class="followAvatar"
+                alt="Zamalek"
+              />
+              <div class="personInfo">
+                <span class="name">
+                  Zamalek SC
+                  <img
+                    src="assets/icons/verified.png"
+                    class="verifiedBadge"
+                    alt="verified"
+                  />
+                </span>
+                <span class="handle">@ZSCOfficial</span>
+              </div>
+            </div>
+            <button class="followBtn">Follow</button>
+          </div>
+
+          <div class="followItem">
+            <div class="personDetails">
+              <img
+                src="assets/images/alahly.png"
+                class="followAvatar"
+                alt="Al Ahly"
+              />
+              <div class="personInfo">
+                <span class="name">
+                  Al Ahly TV
+                  <img
+                    src="assets/icons/verified.png"
+                    class="verifiedBadge"
+                    alt="verified"
+                  />
+                </span>
+                <span class="handle">@AlAhlyTV</span>
+              </div>
+            </div>
+            <button class="followBtn">Follow</button>
+          </div>
+
+          <div class="followItem">
+            <div class="personDetails">
+              <img
+                src="assets/images/liver.jpg"
+                class="followAvatar"
+                alt="liverpool"
+              />
+              <div class="personInfo">
+                <span class="name">
+                  Liverpool FC
+                  <img
+                    src="assets/icons/verified.png"
+                    class="verifiedBadge"
+                    alt="verified"
+                  />
+                </span>
+                <span class="handle">@Liverpool</span>
+              </div>
+            </div>
+            <button class="followBtn">Follow</button>
+          </div>
+
+          <a href="#" class="showMore">Show more</a>
+        </div>
+
+        <nav class="sideFooter">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Ads info</a>
+          <a href="#">More ...</a>
+          <span>© 2025 X Corp.</span>
+        </nav>
+      </aside>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
