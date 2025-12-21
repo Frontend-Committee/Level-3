@@ -45,6 +45,71 @@ const existingPosts = [
     type: "following",
     comments: [],
   },
+
+  {
+    id: 5,
+    username: "Youssef Khaled",
+    topic: "Problem solving daily makes you unstoppable 🧠🔥",
+    liked: false,
+    likesCount: 9,
+    type: "forYou",
+    comments: [],
+  },
+  {
+    id: 6,
+    username: "Nour Mohamed",
+    topic: "Consistency > Motivation 💯",
+    liked: true,
+    likesCount: 21,
+    type: "forYou",
+    comments: [
+      {
+        username: "Sara Mohamed",
+        topic: "So true 👌",
+      },
+    ],
+  },
+  {
+    id: 7,
+    username: "Ahmed Samy",
+    topic: "CSS Grid finally makes sense 😅",
+    liked: false,
+    likesCount: 4,
+    type: "following",
+    comments: [],
+  },
+  {
+    id: 8,
+    username: "React Daily",
+    topic: "Tip: Always break your UI into small components ⚛️",
+    liked: false,
+    likesCount: 18,
+    type: "forYou",
+    comments: [],
+  },
+  {
+    id: 9,
+    username: "Design Hub",
+    topic: "Good UI is invisible 👀✨",
+    liked: true,
+    likesCount: 30,
+    type: "following",
+    comments: [
+      {
+        username: "Mona Ali",
+        topic: "Loved this quote ❤️",
+      },
+    ],
+  },
+  {
+    id: 10,
+    username: "JS Mastery",
+    topic: "Closures are not scary once you understand them 😉",
+    liked: false,
+    likesCount: 25,
+    type: "forYou",
+    comments: [],
+  },
 ];
 
 const foryouHeader = document.querySelector(".foryou");
@@ -65,13 +130,13 @@ const postsContainer = document.querySelector(".posts");
 foryouHeader.addEventListener("click", () => {
   foryouHeader.classList.add("active-btn");
   followingHeader.classList.remove("active-btn");
-  renderConnect("forYou");
+  renderPosts("forYou");
 });
 
 followingHeader.addEventListener("click", () => {
   followingHeader.classList.add("active-btn");
   foryouHeader.classList.remove("active-btn");
-  renderConnect("following");
+  renderPosts("following");
 });
 function renderPosts(page) {
   let filteredPosts = [];
