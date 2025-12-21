@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* main */
+.main-content {
+  padding-left: 318px;
+  max-width: 1300px;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.header .header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.header {
+  width: 100%;
+}
+.header .header-list .list-item {
+  width: 100%;
+  font-size: 20px;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+}
+.header .header-list .list-item:hover {
+  background-color: #eee;
+}
+.active-btn {
+  font-weight: bold;
+}
+.list-item.active-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 4px;
+  background-color: #1d9bf0;
+  border-radius: 999px;
+}
+.adding-post {
+  width: 80%;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(135, 135, 135);
+}
+.posts {
+  width: 80%;
+}
+.post-card {
+  padding: 20px;
+  border-radius: 8px;
+
+  border: 1px solid rgb(137, 137, 137);
+}
+.post-input,
+.post-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.post-input img,
+.post-info img,
+.comment-info img {
+  width: 40px;
+  margin-right: 8px;
+}
+.post-input input,
+.posts input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 12px;
+}
+.post-btn {
+  text-align: end;
+}
+.post-btn .post-btn-js {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.post-btn .post-btn-js:hover {
+  opacity: 0.8;
+}
+
+.post-info .post-paragraph {
+  font-size: 18px;
+  padding: 12px;
+}
+
+.posts .liked {
+  background-color: rgb(255, 0, 0);
+  border: none;
+}
+
+.comments.show {
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  .side-bar {
+    position: absolute;
+    width: 100px;
+  }
+  .side-bar span {
+    display: none;
+  }
+  .profile-group .name {
+    display: none;
+  }
+  .main-content {
+    padding-left: 200px;
+  }
+}

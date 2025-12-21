@@ -1,0 +1,88 @@
+.connect {
+  padding-left: 330px;
+  max-width: 1300px;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.connect .header {
+  width: 100%;
+}
+.header-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.header-item {
+  width: 100%;
+  font-size: 20px;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+}
+.header-item:hover {
+  background-color: #eee;
+}
+.active-btn {
+  font-weight: bold;
+}
+.header-item.active-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 4px;
+  background-color: #1d9bf0; 
+  border-radius: 999px;
+}
+/* follow */
+.follow {
+  width: 100%;
+}
+.follow-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.account:hover {
+  background-color: #eee;
+}
+.follow-group .up-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.follow-group img {
+  width: 50px;
+}
+.follow-group .user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .side-bar {
+    position: absolute;
+    width: 100px;
+  }
+  .side-bar span {
+    display: none;
+  }
+  .profile-group .name {
+    display: none;
+  }
+  .connect {
+    padding-left: 200px;
+  }
+}

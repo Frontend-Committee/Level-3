@@ -1,0 +1,59 @@
+.side-bar {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100px;
+  border-right: 1px solid black;
+}
+.side-bar .icon {
+  border-radius: 12px;
+  padding: 5px;
+  font-size: 38px;
+}
+.sidebar .icon:hover {
+  background-color: #eee;
+}
+.list-item.active {
+  background-color: #1d9bf0;
+  color: white;
+}
+.side-bar .ul-items {
+  list-style: none;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.side-bar .list-item {
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+}
+.list-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.side-bar .list-item .fa-solid {
+  margin-right: 8px;
+  font-size: smaller;
+}
+.side-bar .list-item:hover {
+  background-color: #eee;
+}
+.add-post {
+  width: 100%;
+}
+.side-bar .btn {
+  width: 100%;
+}
+.image {
+  width: 70%;
+}
