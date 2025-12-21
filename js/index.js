@@ -581,7 +581,6 @@ if (feedTabs.length > 0) {
         if (forYouContent) forYouContent.style.display = "block";
       } else {
         if (forYouContent) forYouContent.style.display = "none";
-
         if (tab.classList.contains("trendingSec")) {
           renderList(trendingData);
         } else if (tab.classList.contains("newsSec")) {
