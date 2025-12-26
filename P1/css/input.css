@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Chewy&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Shadows+Into+Light&family=Ultra&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+.btn-sky{
+
+    @apply p-2  disabled:bg-sky-800 disabled:cursor-no-drop  bg-sky-500 hover:bg-sky-600 text-white font-bold rounded-lg w-full text-sm transition-all;
+}
